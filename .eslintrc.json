@@ -32,8 +32,11 @@
     "react/pro-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx",".ts",".tsx"] }],
-    "no-use-before-define":"off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-use-before-define": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -43,6 +46,8 @@
         "ts": "never",
         "tsx": "never"
       }
-   ]
+    ],
+    "import/prefer-default-export": "off",
+    "no-console":"off"
   }
 }
