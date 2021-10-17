@@ -1,13 +1,21 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
-import Tour from './pages/Tour'
+import { Home, Projetos, Contatos } from './pages'
 
-import { themes } from './styles/theme/theme'
+import { themes, GlobalStyles } from './styles'
 
 const App = () => {
   return (
     <ThemeProvider theme={themes}>
-      <Tour />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/projetos" component={Projetos} />
+          <Route path="/contatos" component={Contatos} />
+        </Switch>
+      </Router>
+      <GlobalStyles />
     </ThemeProvider>
   )
 }
