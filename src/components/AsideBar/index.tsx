@@ -1,27 +1,43 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {
   MdPersonOutline,
   MdBusinessCenter,
-  MdMailOutline
+  MdMailOutline,
+  MdOutlineClose
 } from 'react-icons/md'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
-import { Container } from './styles'
+import { useState } from 'react'
+import { Container, ToggleOpen, SideBarMobile } from './styles'
 
 const AsideBar = () => {
+  const [open, setOpen] = useState(true)
+
   return (
-    <Container>
-      <div>
-        <Link to="/">
-          <MdPersonOutline style={{ fontSize: 48 }} />
-        </Link>
-        <Link to="projetos">
-          <MdBusinessCenter style={{ fontSize: 48 }} />
-        </Link>
-        <Link to="contatos">
-          <MdMailOutline style={{ fontSize: 48 }} />
-        </Link>
-      </div>
-    </Container>
+    <>
+      <SideBarMobile>
+        <ToggleOpen
+          onClick={() => {
+            console.log(open)
+            return setOpen(!open)
+          }}>
+          {open ? <MdOutlineClose /> : <GiHamburgerMenu />}
+        </ToggleOpen>
+      </SideBarMobile>
+      <Container tX={open ? '0' : '-100px'}>
+        <div>
+          <NavLink to="/" exact activeClassName="active">
+            <MdPersonOutline style={{ fontSize: 48 }} />
+          </NavLink>
+          <NavLink to="projetos" exact activeClassName="active">
+            <MdBusinessCenter style={{ fontSize: 48 }} />
+          </NavLink>
+          <NavLink to="contatos" exact activeClassName="active">
+            <MdMailOutline style={{ fontSize: 48 }} />
+          </NavLink>
+        </div>
+      </Container>
+    </>
   )
 }
 
