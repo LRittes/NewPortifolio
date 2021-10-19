@@ -2,6 +2,10 @@ import 'styled-components'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
+    text: {
+      primary: string
+      secundary: string
+    }
     colors: {
       primary: string
       secundary: string

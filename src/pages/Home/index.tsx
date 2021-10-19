@@ -1,9 +1,10 @@
-import { AsideBar } from '../../components'
+import { AsideBar, Profile } from '../../components'
 
 const Home = () => {
   return (
     <>
       <AsideBar />
+      <Profile />
     </>
   )
 }

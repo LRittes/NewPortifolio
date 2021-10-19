@@ -17,6 +17,8 @@ export const Container = styled.aside<{ tX: string }>`
 
   ${media.phone} {
     transform: translateX(${(props) => props.tX});
+    place-items: inherit;
+    padding-top: 10rem;
   }
 
   & > div {

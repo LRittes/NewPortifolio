@@ -1,6 +1,10 @@
 import { DefaultTheme } from 'styled-components'
 
 export const themes: DefaultTheme = {
+  text: {
+    primary: 'Ubuntu, sans-serif',
+    secundary: 'Roboto Mono, sans-serif'
+  },
   colors: {
     primary: '#656D4A',
     secundary: '#94AA4B',
