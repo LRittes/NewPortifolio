@@ -5,7 +5,6 @@ import photo from '../../assets/photo.jpg'
 export const Container = styled.div`
   height: 100vh;
   width: 62rem;
-  margin-left: 100px;
   background: url(${photo}) center center;
   display: flex;
   align-items: flex-end;
@@ -20,6 +19,7 @@ export const Descrition = styled.div`
     font-family: ${({ theme }) => theme.text.primary};
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 1.6rem;
   }
 
   & h2 {
@@ -27,6 +27,7 @@ export const Descrition = styled.div`
     font-family: ${({ theme }) => theme.text.primary};
     font-size: 26px;
     font-weight: bold;
+    margin-bottom: 1.6rem;
   }
 
   & div a {

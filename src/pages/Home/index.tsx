@@ -1,11 +1,16 @@
-import { AsideBar, Profile } from '../../components'
+import { AsideBar, Profile, About } from '../../components'
+
+import { Container } from './styles'
 
 const Home = () => {
   return (
-    <>
+    <Container>
       <AsideBar />
-      <Profile />
-    </>
+      <div>
+        <Profile />
+        <About />
+      </div>
+    </Container>
   )
 }
 
