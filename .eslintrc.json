@@ -17,7 +17,6 @@
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
-    // "prettier/prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -48,6 +47,9 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "no-console":"off"
+    "no-console":"off",
+    "prettier/prettier": [   "warn",   {
+      "endOfLine": "auto"
+    }]
   }
 }
