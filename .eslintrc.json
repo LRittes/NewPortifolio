@@ -50,6 +50,7 @@
     "no-console":"off",
     "prettier/prettier": [   "warn",   {
       "endOfLine": "auto"
-    }]
+    }],
+    "global-require": "off"
   }
 }

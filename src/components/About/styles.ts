@@ -25,7 +25,7 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.text.secundary};
     font-size: 1.4rem;
     color: ${({ theme }) => theme.colors.gray};
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.6rem;
   }
 
   & > h2 {
