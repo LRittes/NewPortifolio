@@ -59,7 +59,8 @@ export const MsgField = styled.form`
       outline: none;
     }
 
-    & > input:focus ~ p {
+    & > input:focus ~ p,
+    & > input:valid ~ p {
       transform: translateY(-2rem);
       outline: none;
     }

@@ -7,8 +7,6 @@ import { Conatiner, Contact, Wrapper, MsgField, Btn } from './styles'
 const Contatos = () => {
   function sendMessage(e: FormEvent) {
     e.preventDefault()
-
-    console.log('envou')
   }
 
   return (
@@ -31,7 +29,8 @@ const Contatos = () => {
               </a>
             </div>
           </Contact>
-          <MsgField>
+          <MsgField name="contact-form" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact-form" />
             <div>
               <input required type="text" id="name" name="name" />
               <p>Nome</p>
