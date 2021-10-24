@@ -29,7 +29,7 @@ const Contatos = () => {
               </a>
             </div>
           </Contact>
-          <MsgField name="contact-form" method="post" data-netlify="true">
+          <MsgField name="contact-form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact-form" />
             <div>
               <input required type="text" id="name" name="name" />
