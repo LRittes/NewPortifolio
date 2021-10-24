@@ -1,14 +1,9 @@
-import { FormEvent } from 'react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { AsideBar } from '../../components'
 
 import { Conatiner, Contact, Wrapper, MsgField, Btn } from './styles'
 
 const Contatos = () => {
-  function sendMessage(e: FormEvent) {
-    e.preventDefault()
-  }
-
   return (
     <>
       <AsideBar />
@@ -43,9 +38,7 @@ const Contatos = () => {
               <input required type="text" id="name" name="message" />
               <p>Menssagem</p>
             </div>
-            <Btn type="submit" onClick={sendMessage}>
-              Enviar
-            </Btn>
+            <Btn type="submit">Enviar</Btn>
           </MsgField>
           <div />
         </Wrapper>
