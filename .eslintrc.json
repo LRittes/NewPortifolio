@@ -51,6 +51,7 @@
     "prettier/prettier": [   "warn",   {
       "endOfLine": "auto"
     }],
-    "global-require": "off"
+    "global-require": "off",
+    "react/jsx-no-bind": "off"
   }
 }
