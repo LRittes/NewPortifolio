@@ -62,7 +62,7 @@ const Projetos = () => {
           />
           <CardProj
             baner={baner7}
-            href="typing-game-rittes.vercel.app"
+            href="https://typing-game-rittes.vercel.app/"
             title="Game Typing"
           />
           <CardProj
