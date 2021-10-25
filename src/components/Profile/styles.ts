@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import photo from '../../assets/photo.jpg'
 
@@ -10,9 +11,10 @@ export const Container = styled.div`
   align-items: flex-end;
   justify-content: center;
 `
-export const Descrition = styled.div`
+export const Descrition = styled(motion.div)`
   text-align: center;
   padding-bottom: 20px;
+  opacity: 0;
 
   & h1 {
     color: ${({ theme }) => theme.colors.white};

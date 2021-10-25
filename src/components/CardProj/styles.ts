@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled.a`
+export const Container = styled(motion.a)`
   width: 180px;
   height: 220px;
   display: flex;
@@ -8,6 +9,10 @@ export const Container = styled.a`
   align-items: flex-end;
   justify-content: center;
   position: relative;
+
+  & :hover ~ p {
+    opacity: 1;
+  }
 
   & img {
     width: 100%;
@@ -24,5 +29,6 @@ export const Container = styled.a`
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
   }
 `

@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   display: grid;
   place-items: center;
+  overflow: hidden;
 
   & > h1 {
     font-family: ${({ theme }) => theme.text.primary};

@@ -1,4 +1,5 @@
 import { Container } from './styles'
+import { cardProj } from '../../pages/Projetos'
 
 type banerProps = {
   baner: string
@@ -8,7 +9,7 @@ type banerProps = {
 
 const CardProj = ({ baner, href, title }: banerProps) => {
   return (
-    <Container href={href}>
+    <Container href={href} variants={cardProj}>
       <img src={baner} alt="baner do projeto" />
       <p>{title}</p>
     </Container>
