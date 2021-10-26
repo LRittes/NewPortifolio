@@ -50,17 +50,17 @@ const Projetos = () => {
           />
           <CardProj
             baner={baner6}
-            href="https://leandro-rittes.netlify.app/"
+            href="https://tipogeo.netlify.app"
             title="Game Tipogeo"
           />
           <CardProj
             baner={baner7}
-            href="https://leandro-rittes.netlify.app/"
+            href="https://typing-game-rittes.vercel.app/"
             title="Game Typing"
           />
           <CardProj
             baner={baner8}
-            href="https://leandro-rittes.netlify.app/"
+            href="https://letmeask-lr.web.app/"
             title="LetMeAsk"
           />
         </motion.div>
