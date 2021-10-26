@@ -2,10 +2,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { Container, Descrition } from './styles'
 
-const descrProf = {
-  show: { opacity: [0, 1] },
-  hide: { opacity: [1, 0] }
-}
+import { descrProf } from './motion'
 
 const Profile = () => {
   return (

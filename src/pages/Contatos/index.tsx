@@ -3,14 +3,16 @@ import { AsideBar } from '../../components'
 
 import { Conatiner, Contact, Wrapper, MsgField, Btn } from './styles'
 
+import { animaContl, animaContr } from './motion'
+
 const Contatos = () => {
   return (
     <>
       <AsideBar />
-      <Conatiner>
+      <Conatiner animate={{ opacity: 1 }}>
         <h1>Contatos</h1>
         <Wrapper>
-          <Contact>
+          <Contact variants={animaContl} animate="show" exit="hide">
             <h4>E-mail:</h4>
             <p>leandro_rittes@hotmail.com</p>
             <h4>Telefone:</h4>
@@ -24,7 +26,13 @@ const Contatos = () => {
               </a>
             </div>
           </Contact>
-          <MsgField name="contact-form" method="POST" data-netlify="true">
+          <MsgField
+            variants={animaContr}
+            animate="show"
+            exit="hide"
+            name="contact-form"
+            method="POST"
+            data-netlify="true">
             <input type="hidden" name="form-name" value="contact-form" />
             <div>
               <input required type="text" id="name" name="name" />

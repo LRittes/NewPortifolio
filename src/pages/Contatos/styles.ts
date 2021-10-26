@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Conatiner = styled.div`
+export const Conatiner = styled(motion.div)`
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100%;
+  opacity: 0;
 
   & > h1 {
     font-size: 6rem;
@@ -19,7 +21,7 @@ export const Wrapper = styled.div`
   grid-gap: 1rem;
 `
 
-export const Contact = styled.div`
+export const Contact = styled(motion.div)`
   & > h4 {
     font-size: 2rem;
     font-family: ${({ theme }) => theme.text.secundary};
@@ -45,7 +47,7 @@ export const Contact = styled.div`
   }
 `
 
-export const MsgField = styled.form`
+export const MsgField = styled(motion.form)`
   display: flex;
   flex-direction: column;
 

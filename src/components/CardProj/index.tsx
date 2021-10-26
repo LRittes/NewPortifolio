@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { cardProj } from '../../pages/Projetos'
+import { cardProj } from '../../pages/Projetos/motion'
 
 type banerProps = {
   baner: string

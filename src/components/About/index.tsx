@@ -2,10 +2,7 @@ import { MdComputer, MdGroupWork, MdOutlineCheckCircle } from 'react-icons/md'
 import Work from '../Work'
 import { Container } from './styles'
 
-export const contAbo = {
-  show: { y: [-100, 0], opacity: [0, 1], transition: { delay: 0.3 } },
-  hide: { y: [0, -100], opacity: [1, 0], transition: { delay: 0.3 } }
-}
+import { contAbo } from './motion'
 
 const About = () => {
   return (
