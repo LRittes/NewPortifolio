@@ -87,6 +87,7 @@ export const MsgField = styled(motion.form)`
     left: 0;
     top: -1rem;
     pointer-events: none;
+    transition: all 0.3s ease-in-out;
   }
 `
 export const Btn = styled.button`
